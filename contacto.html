@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · Ana Caballero | Reserva tu sesión de valoración</title>
+  <meta name="description" content="Reserva tu sesión de valoración gratuita de 15 minutos con Ana Caballero, coach ejecutiva. Sin compromiso. Para valorar si el proceso encaja contigo.">
+  <meta name="author" content="Ana Caballero">
+  <link rel="canonical" href="https://www.anacaballerocoach.es/contacto.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto · Ana Caballero | Coach Ejecutiva">
+  <meta property="og:description" content="Reserva tu sesión de valoración gratuita de 15 minutos. Sin compromiso.">
+  <meta property="og:url" content="https://www.anacaballerocoach.es/contacto.html">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%234F6F86'/><text x='50' y='65' font-family='Georgia,serif' font-size='38' font-weight='700' fill='white' text-anchor='middle'>AC</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-inner" role="navigation" aria-label="Navegación principal">
+        <a href="index.html" class="nav-logo" aria-label="Ana Caballero · Executive Coach — Inicio">
+          <span class="logo-name">Ana Caballero</span>
+          <span class="logo-tagline">Executive Coach</span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html#como-trabajamos">Cómo trabajo</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="contacto.html" class="nav-cta">Reservar sesión</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menú móvil">
+      <a href="index.html#como-trabajamos">Cómo trabajo</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="contacto.html" class="nav-cta">Reservar sesión gratuita (15')</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ubicación en el sitio">
+          <a href="index.html">Inicio</a>
+          <span class="sep" aria-hidden="true">›</span>
+          <span aria-current="page">Contacto</span>
+        </nav>
+        <h1 id="page-title">Hablemos</h1>
+        <p class="lead">Si tienes alguna pregunta o quieres valorar si este proceso encaja contigo, escríbeme. Respondo en un plazo de 24–48h.</p>
+      </div>
+    </section>
+
+    <!-- Contact Grid -->
+    <section class="section" aria-label="Formulario de contacto">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Form -->
+          <div>
+            <h2 style="font-size:1.375rem; margin-bottom:0.5rem;">Sesión de valoración gratuita (15')</h2>
+            <p style="color:var(--color-text-muted); margin-bottom:2rem; font-size:0.9375rem;">Sin compromiso. Para valorar si este proceso encaja contigo y con tu momento profesional.</p>
+
+            <!-- SUCCESS STATE (hidden by default) -->
+            <div id="form-success" style="display:none; background:var(--color-bg-light); border:1.5px solid var(--color-primary); border-radius:var(--radius-lg); padding:2.5rem; text-align:center;">
+              <div style="font-size:2.5rem; margin-bottom:1rem;">✓</div>
+              <h3 style="color:var(--color-primary-dark); margin-bottom:0.5rem;">¡Mensaje recibido!</h3>
+              <p style="color:var(--color-text-muted); font-size:0.9375rem;">Gracias por escribirme. Te responderé en un plazo de 24–48h para coordinar la sesión de valoración.</p>
+            </div>
+
+            <!-- FORM -->
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formspree.io/f/TU_ID_DE_FORMSPREE"
+              method="POST"
+              novalidate
+              aria-label="Formulario de contacto"
+            >
+              <!-- Campo oculto: email de respuesta automática -->
+              <input type="hidden" name="_replyto" id="replyto-field">
+              <!-- Evita redirección a página de Formspree -->
+              <input type="hidden" name="_next" value="">
+
+              <div class="grid-2" style="gap:1rem;">
+                <div class="form-group">
+                  <label for="nombre">Nombre <span aria-hidden="true" style="color:var(--color-primary);">*</span></label>
+                  <input type="text" id="nombre" name="nombre" autocomplete="given-name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                  <label for="apellidos">Apellidos</label>
+                  <input type="text" id="apellidos" name="apellidos" autocomplete="family-name" placeholder="Tus apellidos">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email <span aria-hidden="true" style="color:var(--color-primary);">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="tu@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="momento">¿En qué momento profesional te encuentras?</label>
+                <select id="momento" name="momento">
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="Señales de cambio">Señales de que algo tiene que cambiar</option>
+                  <option value="Decidir siguiente paso">Quiero decidir mi siguiente paso</option>
+                  <option value="Preparar siguiente nivel">Quiero prepararme para el siguiente nivel</option>
+                  <option value="Consolidar liderazgo">Quiero consolidar mi liderazgo</option>
+                  <option value="Empresa">Soy una empresa interesada en formación</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Cuéntame brevemente qué te ha traído aquí <span aria-hidden="true" style="color:var(--color-primary);">*</span></label>
+                <textarea id="mensaje" name="mensaje" placeholder="Comparte en unas líneas tu situación actual y qué esperas de este proceso..." required></textarea>
+              </div>
+
+              <div class="form-group" style="flex-direction:row; align-items:flex-start; gap:0.75rem;">
+                <input type="checkbox" id="privacidad" name="privacidad" required style="width:auto; margin-top:0.25rem; flex-shrink:0;">
+                <label for="privacidad" style="font-size:0.875rem; color:var(--color-text-muted); font-weight:400; cursor:pointer;">
+                  He leído y acepto la <a href="privacidad.html" style="color:var(--color-primary);">Política de privacidad</a>. Mis datos serán tratados exclusivamente para gestionar esta solicitud.
+                </label>
+              </div>
+
+              <div id="form-error" style="display:none; background:#FFF0F0; border:1px solid #FFCCCC; border-radius:var(--radius-md); padding:0.875rem 1rem; font-size:0.875rem; color:#c0392b; margin-bottom:0.5rem;">
+                Ha habido un error al enviar el mensaje. Por favor, inténtalo de nuevo o escríbeme directamente a <a href="mailto:hola@anacaballerocoach.es" style="color:#c0392b;">hola@anacaballerocoach.es</a>.
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn--primary btn--lg" style="width:100%; justify-content:center;">
+                Enviar mensaje
+              </button>
+              <p style="font-size:0.8125rem; color:var(--color-text-muted); text-align:center; margin-top:0.5rem;">Respondo en un plazo de 24–48h</p>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <aside class="contact-info" aria-label="Información de contacto">
+
+            <div class="contact-info-block">
+              <h3>Sesión de valoración (15')</h3>
+              <p>Una llamada gratuita para ver si el proceso encaja con tu momento. Sin compromiso ni presión.</p>
+            </div>
+
+            <div class="contact-info-block">
+              <h3>WhatsApp</h3>
+              <p>Si prefieres escribirme directamente, también puedes hacerlo por WhatsApp.<br>
+              <a href="https://wa.me/34000000000">Escribir por WhatsApp →</a></p>
+            </div>
+
+            <div class="contact-info-block">
+              <h3>Email</h3>
+              <p><a href="mailto:hola@anacaballerocoach.es">hola@anacaballerocoach.es</a></p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); border-radius: var(--radius-lg); padding: 1.5rem; color: white;">
+              <h3 style="color:white; font-size:1rem; margin-bottom:0.75rem;">¿Aún tienes dudas?</h3>
+              <p style="color:rgba(255,255,255,0.85); font-size:0.9rem; margin-bottom:1rem;">Revisa los servicios disponibles o lee sobre mi forma de trabajar para saber si este proceso encaja contigo.</p>
+              <div style="display:flex; flex-direction:column; gap:0.625rem;">
+                <a href="servicios.html" class="btn btn--outline-white btn--sm" style="justify-content:center;">Ver servicios</a>
+                <a href="sobre-mi.html" class="btn btn--outline-white btn--sm" style="justify-content:center;">Sobre mí</a>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ quick -->
+    <section class="section section--bg" aria-labelledby="faq-heading">
+      <div class="container container--narrow">
+        <header class="section-header text-center">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 id="faq-heading">Antes de contactar</h2>
+        </header>
+        <div style="display:flex; flex-direction:column; gap:1.5rem;">
+          <div>
+            <h3 style="font-size:1rem; margin-bottom:0.375rem;">¿La sesión de valoración es gratuita?</h3>
+            <p style="font-size:0.9375rem; color:var(--color-text-muted);">Sí, completamente. Es una llamada de 15 minutos para ver si el proceso encaja contigo. Sin presión ni compromiso.</p>
+          </div>
+          <hr class="divider">
+          <div>
+            <h3 style="font-size:1rem; margin-bottom:0.375rem;">¿Las sesiones son presenciales u online?</h3>
+            <p style="font-size:0.9375rem; color:var(--color-text-muted);">Las sesiones se realizan principalmente online (videollamada), lo que permite trabajar con profesionales en cualquier parte del mundo.</p>
+          </div>
+          <hr class="divider">
+          <div>
+            <h3 style="font-size:1rem; margin-bottom:0.375rem;">¿Cuánto dura un proceso de coaching?</h3>
+            <p style="font-size:0.9375rem; color:var(--color-text-muted);">Los programas tienen una duración aproximada de 3 a 5 meses, con sesiones quincenales. La sesión individual es puntual y sin duración mínima.</p>
+          </div>
+          <hr class="divider">
+          <div>
+            <h3 style="font-size:1rem; margin-bottom:0.375rem;">¿Puedo contratar el proceso a través de mi empresa?</h3>
+            <p style="font-size:0.9375rem; color:var(--color-text-muted);">Sí. Trabajo con coaching ejecutivo patrocinado por empresa. Escríbeme para hablar sobre las opciones disponibles para organizaciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-name">Ana Caballero</div>
+          <div class="logo-tagline">Executive Coach</div>
+          <p>Coaching ejecutivo para profesionales y líderes que quieren crecer con criterio e impacto real.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Navegación del pie de página">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="footer-nav footer-contact">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="contacto.html">Formulario de contacto</a></li>
+            <li><a href="https://wa.me/34000000000">WhatsApp</a></li>
+            <li><span>Madrid, España</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Ana Caballero · Executive Coach. Todos los derechos reservados.</span>
+        <span><a href="privacidad.html">Política de privacidad</a> · <a href="aviso-legal.html">Aviso legal</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie banner -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies" style="display:none;">
+    <p>Usamos cookies técnicas necesarias para el funcionamiento del sitio. Si activas las cookies analíticas nos ayudas a mejorar la web. <a href="privacidad.html#cookies">Más información</a></p>
+    <div class="cookie-btns">
+      <button id="cookie-accept" class="btn btn--primary btn--sm">Aceptar todas</button>
+      <button id="cookie-essential" class="btn btn--outline btn--sm">Solo esenciales</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
