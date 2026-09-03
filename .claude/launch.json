@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "ana-caballero-web",
-      "runtimeExecutable": "/usr/bin/python3",
-      "runtimeArgs": ["/tmp/serve_web.py"],
-      "port": 8787
+      "name": "web-preview",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/Users/anacaballerolaporta/Documents/Coach business/WEB-claude/.claude/serve.py", "8789"],
+      "port": 8789
     }
   ]
 }

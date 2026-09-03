@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /Web antigua/
 
-Sitemap: https://www.anacaballerocoach.es/sitemap.xml
+Sitemap: https://www.anacaballerocoach.com/sitemap.xml

@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/about"
+  to = "/sobre-mi.html"
+  status = 301
+
+[[redirects]]
+  from = "/about/"
+  to = "/sobre-mi.html"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

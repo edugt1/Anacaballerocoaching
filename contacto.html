@@ -13,7 +13,7 @@
   <meta property="og:title" content="Contacto — Ana Caballero | Coach Ejecutiva">
   <meta property="og:description" content="Reserva tu sesión de valoración gratuita de 15 minutos. Sin compromiso.">
   <meta property="og:url" content="https://www.anacaballerocoach.com/contacto.html">
-  <meta property="og:image" content="https://www.anacaballerocoach.com/img/og-image.jpg">
+  <meta property="og:image" content="https://www.anacaballerocoach.com/img/ana-sobre-mi.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
@@ -27,6 +27,15 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQW7HL3DKE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NQW7HL3DKE');
+  </script>
 
   <script type="application/ld+json">
   {
@@ -43,7 +52,7 @@
   <!-- NAV -->
   <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
     <div class="nav__inner">
-      <a href="index.html#hero" class="nav__logo" aria-label="Ana Caballero Coach — inicio">
+      <a href="index.html" class="nav__logo" aria-label="Ana Caballero Coach — inicio">
         <img src="img/logo-ana-caballero.png" alt="Ana Caballero — Executive Coach" class="nav__logo-img">
       </a>
       <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
@@ -68,11 +77,10 @@
           <span class="eyebrow">Contacto</span>
           <h1>Hablemos</h1>
           <p class="subtitle">
-            Si tienes alguna pregunta o quieres explorar si este proceso encaja contigo,
-            puedes escribirme o reservar directamente una sesión de valoración gratuita de 15 minutos.
+            Si tienes alguna duda o quieres más información, escríbeme.
           </p>
 
-          <form class="contact-form" id="contactForm" method="POST" action="https://formspree.io/f/mqegogoa" novalidate>
+          <form class="contact-form" id="contactForm" method="POST" action="https://formspree.io/f/mqegqleq" novalidate>
 
             <div class="form-group">
               <label for="nombre">Nombre <span aria-label="obligatorio" style="color:var(--color-azul-medio)">*</span></label>
@@ -132,10 +140,7 @@
         <div class="contact-aside">
           <div class="contact-aside__box">
             <h3>Sesión de valoración gratuita</h3>
-            <p>
-              Puedes reservar directamente por aquí tu sesión de 15 minutos para contarme tu situación,
-              entender si este proceso encaja contigo y resolver tus dudas. Sin ningún compromiso.
-            </p>
+            <p>¿No sabes si esto es para ti? Reserva una llamada gratuita y lo vemos juntos.</p>
             <a href="https://calendly.com/anacaballerolaportacoach/15min" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="width:100%; justify-content:center;">
               Reservar sesión de valoración (15')
             </a>
@@ -245,7 +250,7 @@
       btn.textContent = 'Enviando…';
 
       try {
-        const response = await fetch('https://formspree.io/f/mqegogoa', {
+        const response = await fetch('https://formspree.io/f/mqegqleq', {
           method: 'POST',
           body: new FormData(form),
           headers: { 'Accept': 'application/json' }
