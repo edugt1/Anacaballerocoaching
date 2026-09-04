@@ -216,12 +216,20 @@ p  { font-size: 1rem; line-height: 1.75; }
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 4rem;
+  grid-template-areas:
+    "toptext image"
+    "bottext image";
+  column-gap: 4rem;
+  row-gap: 1rem;
+  align-content: center;
   align-items: center;
   width: 100%;
 }
 
-.hero__content { max-width: 560px; }
+.hero__text { max-width: 560px; }
+.hero__text--top { grid-area: toptext; align-self: end; }
+.hero__text--bot { grid-area: bottext; align-self: start; }
+.hero__image { grid-area: image; align-self: center; }
 
 .hero__pills {
   display: flex;
@@ -242,7 +250,7 @@ p  { font-size: 1rem; line-height: 1.75; }
 .hero__cta-group { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start; }
 .hero__microcopy { font-size: 0.78rem; color: #888; }
 
-.hero__image { position: relative; height: 100%; display: flex; flex-direction: column; }
+.hero__image { position: relative; display: flex; flex-direction: column; }
 .hero__img-wrap {
   border-radius: 16px;
   overflow: hidden;
@@ -275,18 +283,24 @@ p  { font-size: 1rem; line-height: 1.75; }
 @media (max-width: 900px) {
   .hero {
     overflow: hidden;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 5.5rem 1.5rem 3.5rem;
   }
   .hero__inner {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    grid-template-areas:
+      "toptext"
+      "image"
+      "bottext";
+    row-gap: 1.75rem;
     text-align: center;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
   }
-  .hero__content { max-width: 100%; width: 100%; overflow: hidden; }
+  .hero__text { max-width: 100%; width: 100%; overflow: hidden; }
+  .hero__text--top,
+  .hero__text--bot { align-self: auto; }
+  .hero__text--top { margin-bottom: -0.25rem; }
   .hero h1 { font-size: 2rem; }
   .hero__pills { justify-content: center; flex-direction: column; align-items: center; }
   .hero__pill { text-align: center; }
