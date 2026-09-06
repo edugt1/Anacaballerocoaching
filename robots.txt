@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.anacaballerocoach.com/sitemap.xml
+Sitemap: https://anacaballerocoach.com/sitemap.xml
