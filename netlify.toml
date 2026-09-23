@@ -2,14 +2,76 @@
   publish = "."
   command = ""
 
+# URLs únicas: sin www y sin .html (las versiones .html redirigen con 301)
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/servicios.html"
+  to = "/servicios"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sesion-estrategica.html"
+  to = "/sesion-estrategica"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/crecimiento-ejecutivo.html"
+  to = "/crecimiento-ejecutivo"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/consolidacion-liderazgo.html"
+  to = "/consolidacion-liderazgo"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/formacion-empresas.html"
+  to = "/formacion-empresas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sobre-mi.html"
+  to = "/sobre-mi"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contacto.html"
+  to = "/contacto"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacidad.html"
+  to = "/privacidad"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/aviso-legal.html"
+  to = "/aviso-legal"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/about"
-  to = "/sobre-mi.html"
+  to = "/sobre-mi"
   status = 301
 
 [[redirects]]
   from = "/about/"
-  to = "/sobre-mi.html"
+  to = "/sobre-mi"
   status = 301
 
 [[redirects]]
